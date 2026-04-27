@@ -1,0 +1,201 @@
+
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Elite Travel Booking</title>
+
+  <link rel="stylesheet" href="style.css">
+      
+
+   <style> 
+   body { 
+    font-family: Arial, sans-serif; background: #f4f4f4; margin: 0; padding: 0; } .
+   
+   booking-container { width: 80%; max-width: 500px; margin: 50px auto; background:#275dae padding: 20px; border-radius: 8px; 
+   box-shadow: 0 0 10px rgba(0,0,0,0.1); } 
+   
+   h2 { text-align: center; color: #2c3e50; }
+   
+   label { display: block;margin: 10px 0 5px; font-weight: bold; }
+   
+   input, select { width: 100%; padding: 10px; margin-bottom: 15px; border: 1px solid #ccc; border-radius: 4px; }
+   
+   button { background: #275dae; color:#275dae padding: 12px; border: none; border-radius: 4px; cursor: pointer;
+   width: 100%;font-size: 16px;margin-top: 20px; /* ensures spacing before button */ }
+   
+   button:hover { background: #212791; }
+   
+   </style>
+   
+</head> 
+   
+<body> 
+
+    <header>
+
+        <h1>Elite Travel Booking</h1>
+         
+        <div class="logo">
+            <img src="images/logo.png" alt="Elite Travel Agency Logo">
+        </div>
+
+        <nav>
+            <a href="index.html">Home</a>
+
+            <a href="about.html">About</a>
+
+            <a href="service.html">Service</a>
+
+            <a href="booking.html">Booking</a>
+
+            <a href="contact.html">Contact</a>
+
+            <a href="feedback.html">Feedback</a>
+        </nav>
+
+    <main>
+     <section>
+       <div class="booking-container"> 
+        
+        <h2>TRAVEL BOOKING FORM</h2>
+        <form id="booking form">
+
+        <form action="confirmation.html" method="post">
+            
+            <!-- Name --> 
+             <fieldset>
+                <legend>Traveller Information</legend>
+            <label for="name">Full Name</label>
+            <input type="text" id="name" name="name" required>
+             </fieldset>
+            
+            <!-- Gender --> 
+             
+            <fieldset>
+            <label for="gender">Gender</label>
+            <select id="gender" name="gender" required> 
+                <option value="">-- Select Gender --</option> 
+                <option value="male">Male</option>
+                <option value="female">Female</option> 
+            </select>
+            </fieldset>
+
+            <!-- Contact -->
+
+            <fieldset>
+            <label for="contact">Contact Number/Email</label> 
+            <input type="tex" id="contact" name="contact" required>
+            </fieldset>
+
+            <fieldset>
+            <label for="id">ID no./Passport no.</label>
+            <input type="text" id="id" name="id" required>
+            </fieldset>
+            
+            <!-- Preferred Location --> 
+             
+            <fieldset>
+                <legend>Trip Details</legend>
+            <label for="destination">Destination</label> 
+            <select id="destination" name="destination" required>
+                <option value="">--Select Preferred Destination--</option>
+                <option value="Chobe national park">Chobe</option>
+                <option value="okavango delta">Okavango</option>
+                <option value="makgadikgadi pans">Makgadikgadi</option>
+                <option value="victoria falls">Victoria Falls</option>
+            </select>
+            </fieldset>
+              
+            <!-- Preferred Dates --> 
+             
+            <fieldset>
+            <label for="date">Preferred Travel Date</label> 
+            <input type="date" id="date" name="date" required> 
+            </fieldset>
+
+            <!-- Number of Travelers -->
+
+             <fieldset>
+            <label for="travelers">Number of Travelers</label> 
+            <select id="travelers" name="travelers" required>
+                <option value="">-- Select Option --</option> 
+                <option value="single">1</option> 
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+            </select>
+             </fieldset>
+            
+            <!-- Payment Method -->
+             
+            <fieldset>
+            <label for="payment">Payment Method</label> 
+            <input type="text" id="payment" value="Cash Deposit" readonly>
+            </fieldset>
+
+            <fieldset>
+            <label for="proof">Attach Proof of Payment</label>
+            <input type="file" id="proof" name="proof">
+            </fieldset>
+
+            <style>
+                .file-upload {
+                    boarder: 1px Solid #ccc
+                    padding: 8px;
+                    boarder-radius: 4px;
+                    cursor: pointer;
+                }
+
+                .file-upload: ::file-selector-button {
+                    background: #036;
+                    color: #fff;
+                    border: none;
+                    padding: 8px 12px;
+                    border-radius: 4px;
+                    cursor: pointer;
+                }
+
+                .file-upload: ::file-selector-button:hover {
+                    background: #059;
+                }
+            </style>
+                
+            <!-- Submit Button (only at the end) --> 
+             
+            <button type="submit">Submit & Confirm Booking</button> 
+        
+        </form> 
+      </form>
+
+     </div>
+     </section>
+    </main>
+
+    <footer class="container text-center my-5">
+        <!--Contact Info-->
+        <section id="contact">
+            <p>Email: elitetravels@gmail.com | Phone: +267 3936036/+267 78568529</p>
+        </section>
+
+        <!--Social Media Icons-->
+        <section id="social-media">
+            <a href="#"><img src="facebook-icon.png" alt="Facebook"></a>
+            <a href="#"><img src="instagram-icon.png" alt="Instagram"></a>
+            <a href="#"><img src="tiktok-icon.png" alt="Tiktok"></a>
+        </section>
+
+        <!--Copyright-->
+        <section id="copyright">
+            <p>&copy; 2026 Elite Travel Agency. All rights reserved.</p>
+        </section>
+    </footer>
+
+</body> 
+
+</html>

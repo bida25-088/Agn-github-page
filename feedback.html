@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewpoint" content="width=device-width, initial-scale=1.0">
+    <title>Feedback - Elite Travel Agency</title>   
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0; padding: 0;
+            background: #f4f4f4
+        }
+        header {
+            background: #036
+            color: #fff;
+            padding: 15px;
+            text-align: center;
+        }
+        nav ul {
+            list-style: none;
+            padding; 0;
+            display: flex;
+            justify-content: center;
+            background: #059;
+            margin: 0;
+        }
+         nav ul li {
+            margin: 0 15px;
+         }
+         nav ul li a {
+            color: #fff;
+            text-decoration: none;
+         }
+         .container {
+      max-width: 700px;
+      margin: 30px auto;
+      background: #fff;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    h1 {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+    label {
+      display: block;
+      margin: 10px 0 5px;
+    }
+    textarea {
+      width: 100%;
+      height: 120px;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      resize: vertical;
+    }
+    .submit-btn {
+      background: #003366;
+      color: #fff;
+      border: none;
+      padding: 12px;
+      width: 100%;
+      border-radius: 4px;
+      cursor: pointer;
+      font-size: 16px;
+      margin-top: 15px;
+    }
+    .submit-btn:hover {
+      background: #005599;
+    }
+    footer {
+      text-align: center;
+      padding: 15px;
+      background: #003366;
+      color: #fff;
+      margin-top: 30px;
+    }
+    .social-icons a {
+      color: #fff;
+      margin: 0 10px;
+      text-decoration: none;
+    }
+    </style>
+</head>
+<body>
+
+    <header>
+
+        <div class="logo">
+            <img src="images/logo.png" alt="Elite Travel Agency Logo">
+        </div>
+
+        <nav>
+            <a href="index.html">Home</a>
+
+            <a href="about.html">About</a>
+
+            <a href="service.html">Service</a>
+
+            <a href="booking.html">Booking</a>
+
+            <a href="contact.html">Contact</a>
+
+            <a href="feedback.html">Feedback</a>
+        </nav>
+
+    </header>
+
+    <main class="container my-5">
+
+        <section>
+            <h1>Feedback</h1>
+            <p>Please fill the form below.</p>
+
+            <form>
+
+                <label for="faq1">How was your booking experience?</label>
+                <textarea id="faq1" name="faq1" placeholder="=Type your answer here...."></textarea>
+
+                <label for="faq2">Are you satisfied with our services?</label>
+                <textarea id="faq2" name="faq2" placeholder="=Type your answer here...."></textarea>
+
+                <label for="faq3">Would you recommend our agency?</label>
+                <textarea id="faq3" name="faq3" placeholder="=Type your answer here...."></textarea>
+
+                <!--Suggestion Box-->
+                <label for="suggestion">Suggestion</label>
+                <textarea id="suggestion" name="suggestion" placeholder="Type your suggestion here..."></textarea>
+
+                <button type="submit" class="submit-btn">Send</button>
+
+            </form> 
+            
+        </section>
+            
+    </main>
+
+  <footer class="container text-center my-5">
+        
+        <!--Social Media Icons-->
+        <section id="social-media">
+            <a href="#"><img src="facebook-icon.png" alt="Facebook"></a>
+            <a href="#"><img src="instagram-icon.png" alt="Instagram"></a>
+            <a href="#"><img src="tiktok-icon.png" alt="Tiktok"></a>
+        </section>
+
+        <!--Copyright-->
+        <section id="copyright">
+            <p>&copy; 2026 Elite Travel Agency. All rights reserved.</p>
+        </section>
+
+    </footer>
+    
+</body>
+
+</html>
+
+        
