@@ -1,0 +1,11 @@
+# Ignore VS Code settings
+.vscode/
+
+# Ignore system cache files
+AppData/
+*.bin
+*.cache
+
+# Ignore OS-generated files
+Thumbs.db
+desktop.ini
