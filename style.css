@@ -8,6 +8,13 @@ body {
   line-height: 1.6;
   background: #f4f4f4;
 
+  .container {
+  width: 100%;
+  max-width: 1200px;
+  margin: auto;
+  padding: 15px;
+}
+
 
 header {
   position: fixed;
