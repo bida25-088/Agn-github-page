@@ -72,7 +72,7 @@
         
         <h2>TRAVEL BOOKING FORM</h2>
 
-        <form id="booking-form" action="confirmation.html" method="post">
+        <form id="booking-form">
             
             <!-- Name --> 
              <fieldset>
@@ -174,10 +174,15 @@
             </style>
              
             <button type="submit">Submit</button> 
-        </form> 
         </form>
 
-
+<script>
+  document.getElementById("booking-form").addEventListener("submit", function(event) {
+    event.preventDefault(); 
+    window.location.href = "confirmation.html"; 
+  });
+</script>
+        
      </section>
     </main>
 
